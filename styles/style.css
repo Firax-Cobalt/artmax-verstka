@@ -2,6 +2,11 @@ html {
   min-height: 100vh;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 :root {
   /* device-width */
   /* --mobile-width: 320px;
@@ -32,9 +37,16 @@ html {
   }
 }
 
+.artmax-logo__image {
+  display: block;
+}
+
 .button-applictation {
   display: none;
   @media screen and (min-width: 1200px) {
     display: block;
   }
+}
+
+.introduce {
 }

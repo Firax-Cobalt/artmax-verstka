@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Firax-Cobalt/artmax-verstka#readme",
   "dependencies": {
-    "browser-sync": "^3.0.2"
+    "browser-sync": "^3.0.2",
+    "scss": "^0.2.4"
   }
 }

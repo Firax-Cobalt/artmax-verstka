@@ -2,6 +2,15 @@ html {
   min-height: 100vh;
 }
 
+:root {
+  /* device-width */
+  --mobile-width: 380px;
+  --max-mobile-width: 639px;
+  --tablet-width: 640px;
+  --max-tablet-wdith: 1199px;
+  --desktop-width: 1200px;
+}
+
 .page {
   font-family: Montserrat, arial, sans-serif;
   margin: 0;

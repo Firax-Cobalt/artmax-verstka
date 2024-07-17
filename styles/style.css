@@ -4,11 +4,11 @@ html {
 
 :root {
   /* device-width */
-  --mobile-width: 380px;
+  /* --mobile-width: 320px;
   --max-mobile-width: 639px;
   --tablet-width: 640px;
   --max-tablet-wdith: 1199px;
-  --desktop-width: 1200px;
+  --desktop-width: 1200px; */
 }
 
 .page {
@@ -17,4 +17,16 @@ html {
   display: flex;
   flex-direction: column;
   background-color: rgb(28, 12, 83);
+}
+
+.main-nav {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+}
+
+.button-applictation {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
 }

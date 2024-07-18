@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   min-height: 100vh;
 }
@@ -11,6 +17,8 @@ html {
   --color-5: rgb(183, 183, 183);
   --color-6: rgb(10, 211, 149);
   --color-7: rgb(236, 236, 236);
+  --color-8: rgb(209, 209, 209);
+  --color-9: rgb(240, 243, 244);
 
   /* background-color */
   --background-color-1: rgb(0, 0, 0);
@@ -20,6 +28,8 @@ html {
   --background-color-5: rgb(183, 183, 183);
   --background-color-6: rgb(10, 211, 149);
   --background-color-7: rgb(236, 236, 236);
+  --background-color-8: rgb(209, 209, 209);
+  --background-color-9: rgb(240, 243, 244);
 }
 
 img {
@@ -40,6 +50,11 @@ dd {
   padding: 0;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -48,6 +63,16 @@ a {
 button {
   border: none;
   cursor: pointer;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
 }
 
 .visually-hidden {
@@ -67,6 +92,7 @@ button {
   font-family: Montserrat, arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -133,6 +159,7 @@ button {
 }
 
 .about {
+  padding-top: 44px;
   padding-bottom: 78px;
 }
 
@@ -210,4 +237,71 @@ button {
   width: 300px;
   margin: 0 auto;
   box-shadow: 0px 14px 24px 0px rgba(71, 71, 71, 0.1);
+}
+
+.services {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  background-color: var(--background-color-9);
+}
+
+.services__title {
+  width: 300px;
+  margin: 0 auto 50px;
+}
+
+
+
+.services__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.services__text {
+  line-height: 1.55;
+}
+
+.services__text:first-of-type {
+  margin-bottom: 1.5em;
+}
+
+.services__list {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.services__item {
+  width: 274px;
+  padding: 22px 13px 20px 48px; 
+  margin: 0 auto;
+  border: 1px solid var(--background-color-8);
+  border-radius: 10px;
+  position: relative;
+}
+
+.services__item::before {
+  content: '';
+  display: block;
+  width: 19px;
+  height: 24px;
+  background: url("/images/services-icon.svg") no-repeat;
+  position: absolute;
+  top: 22px;
+  left: 12px;
+}
+
+.services__item-text {
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.services__submit {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 14px 22px 0px rgba(71, 71, 71, 0.1);
 }

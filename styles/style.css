@@ -8,12 +8,18 @@ html {
   --color-2: rgb(255, 255, 255);
   --color-3: rgb(28, 12, 83);
   --color-4: rgb(10, 211, 150);
+  --color-5: rgb(183, 183, 183);
+  --color-6: rgb(10, 211, 149);
+  --color-7: rgb(236, 236, 236);
 
   /* background-color */
   --background-color-1: rgb(0, 0, 0);
   --background-color-2: rgb(255, 255, 255);
   --background-color-3: rgb(28, 12, 83);
   --background-color-4: rgb(10, 211, 150);
+  --background-color-5: rgb(183, 183, 183);
+  --background-color-6: rgb(10, 211, 149);
+  --background-color-7: rgb(236, 236, 236);
 }
 
 img {
@@ -27,7 +33,9 @@ h3,
 p,
 blockquote,
 ul,
-ol {
+ol,
+dl,
+dd {
   margin: 0;
   padding: 0;
 }
@@ -109,6 +117,7 @@ button {
 .introduce {
   background-color: var(--background-color-3);
   padding-top: 153px;
+  padding-bottom: 39px;
 }
 
 .introduce__logo {
@@ -121,4 +130,84 @@ button {
   color: var(--color-2);
   text-align: center;
   line-height: 1.5;
+}
+
+.about {
+  padding-bottom: 78px;
+}
+
+.about__title {
+  margin-bottom: 22px;
+}
+
+.about__image {
+  border-radius: 50%;
+}
+
+.about__subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.55;
+  margin-bottom: 1.5em;
+}
+
+.about__text {
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.about__list-description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+  margin-bottom: 32px;
+}
+
+.about__list-description-item {
+  min-height: 96px;
+  width: 276px;
+  position: relative;
+  margin: 0 auto;
+  padding-left: 24px;
+}
+
+.about__list-description-item::before {
+  content: "";
+  width: 2px;
+  height: 96px;
+  position: absolute;
+  inset: 0;
+  background-color: var(--background-color-7);
+}
+
+.about__list-description-item::after {
+  content: "";
+  width: 2px;
+  height: 24px;
+  position: absolute;
+  inset: 0;
+  background-color: var(--background-color-6);
+}
+
+.about__list-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.about__list-title-accent {
+  color: var(--color-5);
+  font-size: 20px;
+  line-height: 1.55;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.about__submit {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: 0px 14px 24px 0px rgba(71, 71, 71, 0.1);
 }

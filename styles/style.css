@@ -2,6 +2,11 @@ html {
   min-height: 100vh;
 }
 
+:root {
+  --color-1: rgb(0, 0, 0);
+  --color-2: rgb(255, 255, 255);
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -57,9 +62,13 @@ ol {
 }
 
 .introduce__logo {
-  margin-bottom: 85px;
+  display: block;
+  margin: 0 auto 85px;
+  width: 95%;
 }
 
-.introduce_text {
-  
+.introduce__text {
+  color: var(--color-2);
+  text-align: center;
+  line-height: 1.5;
 }

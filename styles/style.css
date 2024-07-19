@@ -80,6 +80,10 @@ select::-ms-expand {
   display: none;
 }
 
+address {
+  font-style: normal;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -358,6 +362,7 @@ select::-ms-expand {
 
 .main-form {
   background-color: var(--background-color-9);
+  margin: 0;
   padding-top: 68px;
   padding-bottom: 93px;
 }
@@ -414,6 +419,8 @@ select::-ms-expand {
   height: 20px;
   border: 2px solid var(--background-color-6);
   position: relative;
+  margin-right: 8px;
+  top: 7px;
 }
 
 .main-form__input-tick::before {
@@ -429,6 +436,39 @@ select::-ms-expand {
   transform: rotate(45deg);
 }
 
-.main-form__input[type="checkbox"]:checked ~ .main-form__input-tick::before {
+input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   display: block;
 }
+
+.footer {
+  background-color: var(--background-color-3);
+  padding: 45px 0 32px;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto 34px;
+}
+
+.footer__address {
+  width: 328px;
+  margin: 0 auto 28px;
+  text-align: center;
+  color: rgb(255 255 255 / 0.5);
+  font: 400 1.4rem /1.85 "Montserrat", sans-serif;
+}
+
+.footer__map {
+  width: 320px;
+  margin: 0 auto 38px;
+}
+
+.foooter__privacy-policy-link {
+  display: block;
+  max-width: 210px;
+  margin: 0 auto;
+  color: rgb(255 255 255 / 0.5);
+  font: 400 1.2rem /1.85 "Montserrat", sans-serif;
+}
+
+

@@ -109,7 +109,9 @@
           <option value="Защита от ботов">Защита от ботов</option>
           <option value="Защита от взломов">Защита от взломов</option>
         </select>
-        <div class="services__content-wrapper services__content-wrapper_protect_attack">
+        <div
+          class="services__content-wrapper services__content-wrapper_protect_attack"
+        >
           <div class="services__text-wrapper wrapper">
             <p class="services__text">
               Наши специалисты используют особую систему фильтрации, которая
@@ -178,9 +180,50 @@
             </button> -->
       </section>
       <section class="form">
-        <h2 class="form__title title wrapper">Заполните форму ниже, и мы вскоре свяжемся с вами</h2>
-        <form class="form" method="post" action="#">
+        <h2 class="form__title title wrapper">
+          Заполните форму ниже, и мы вскоре свяжемся с вами
+        </h2>
+        <form class="main-form" method="post" action="#">
+          <p class="main-form__field wrapper">
+            <label class="visually-hidden" for="name">Ваше имя</label>
+            <input
+              class="main-form__input"
+              type="text"
+              placeholder="Ваше имя"
+              id="name"
+              required
+            />
+          </p>
+          <p class="main-form__field wrapper">
+            <label class="visually-hidden" for="e-mail">Ваш e-mail</label>
+            <input
+              class="main-form__input"
+              type="email"
+              placeholder="Ваш e-mail"
+              id="e-mail"
+              required
+            />
+          </p>
+          <p class="main-form__field wrapper">
+            <label class="visually-hidden" for="tel">Номер телефона</label>
+            <input
+              class="main-form__input"
+              type="tel"
+              placeholder="(999) 999-99-99"
+              id="tel"
+              required
+            />
+          </p>
+          <p class="main-form__field main-form__field_checkbox wrapper">
+            <label class="main-form__label" for="privacy-policy"
+              >
+            <input class="main-form__input main-form__input_checkbox" type="checkbox" id="privacy-policy" />
+            Даю согласие на обработку моих персональных данных на условиях и для целей, определенных в <a href="#">Политике конфиденциальности</a> 
+            </label
+            >
+          </p>
 
+          <button class="main-form__submit button">Отправить</button>
         </form>
       </section>
     </main>

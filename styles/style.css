@@ -111,6 +111,11 @@ select::-ms-expand {
   flex-direction: column;
 }
 
+.wrapper {
+  width: 300px;
+  margin: 0 auto;
+}
+
 .button {
   background-color: var(--background-color-4);
   border-radius: 60px;
@@ -264,8 +269,7 @@ select::-ms-expand {
 }
 
 .services__title {
-  width: 300px;
-  margin: 0 auto 50px;
+  margin-bottom: 50px;
 }
 
 .services__select-wrapper {
@@ -281,6 +285,10 @@ select::-ms-expand {
   padding: 16px 40px 16px 20px;
   border: 3px solid var(--background-color-6);
   background-color: var(--background-color-9);
+  /* background: var(--background-color-9) url("/images/select-list-triangle.svg") no-repeat;
+  background-color: var(--background-color-9);
+  background-size: 10px;
+  background-position: top right; */
   color: var(--color-6);
   font-weight: 800;
   font-size: inherit;
@@ -288,11 +296,14 @@ select::-ms-expand {
   display: block;
 }
 
+.services__select-list:focus-visible {
+  outline: none;
+}
+
 .services__text-wrapper {
   display: flex;
   flex-direction: column;
-  width: 300px;
-  margin: 0 auto 31px;
+  margin-bottom: 31px;
 }
 
 .services__text {

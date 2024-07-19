@@ -30,6 +30,7 @@ html {
   --color-7: rgb(236, 236, 236);
   --color-8: rgb(209, 209, 209);
   --color-9: rgb(240, 243, 244);
+  --color-10: rgb(10, 189, 135);
 
   /* background-color */
   --background-color-1: rgb(0, 0, 0);
@@ -40,7 +41,8 @@ html {
   --background-color-6: rgb(10, 211, 149);
   --background-color-7: rgb(236, 236, 236);
   --background-color-8: rgb(209, 209, 209);
-  --background-color-9: rgb(240, 243, 244);
+  --background-color-9: rgb(240, 243, 244);  --background-color-10: rgb(10, 189, 135);
+
 }
 
 img {
@@ -118,6 +120,11 @@ select::-ms-expand {
   text-align: center;
   min-height: 58px;
   padding: 18px 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: rgb(10, 189, 135);
 }
 
 .title {

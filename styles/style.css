@@ -1,13 +1,3 @@
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 900
-
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
 *,
 *::before,
 *::after {
@@ -42,9 +32,9 @@ html {
   --background-color-6: rgb(10, 211, 149);
   --background-color-7: rgb(236, 236, 236);
   --background-color-8: rgb(209, 209, 209);
-  --background-color-9: rgb(240, 243, 244);  --background-color-10: rgb(10, 189, 135);
+  --background-color-9: rgb(240, 243, 244);
+  --background-color-10: rgb(10, 189, 135);
   --background-color-11: rgb(149, 149, 149);
-
 }
 
 img {
@@ -104,7 +94,7 @@ select::-ms-expand {
 }
 
 .page {
-  font-family:  "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
@@ -285,14 +275,14 @@ select::-ms-expand {
 .services__select-list {
   margin: 0 auto 30px;
   padding: 16px 40px 16px 20px;
-  border: 3px solid var(--background-color-6);
+  border: 2px solid var(--background-color-6);
   background-color: var(--background-color-9);
   /* background: var(--background-color-9) url("/images/select-list-triangle.svg") no-repeat;
   background-color: var(--background-color-9);
   background-size: 10px;
   background-position: top right; */
   color: var(--color-6);
-  font-weight: 800;
+  font-weight: 700;
   font-size: inherit;
   width: calc(100% - 40px);
   display: block;
@@ -320,12 +310,12 @@ select::-ms-expand {
   margin-bottom: 32px;
   display: flex;
   flex-direction: column;
-  gap: 20px
+  gap: 20px;
 }
 
 .services__item {
   width: 274px;
-  padding: 22px 13px 20px 48px; 
+  padding: 22px 13px 20px 48px;
   margin: 0 auto;
   border: 1px solid var(--background-color-8);
   border-radius: 10px;
@@ -333,7 +323,7 @@ select::-ms-expand {
 }
 
 .services__item::before {
-  content: '';
+  content: "";
   display: block;
   width: 19px;
   height: 24px;
@@ -357,6 +347,9 @@ select::-ms-expand {
 
 .form {
   padding-top: 60px;
+  background: url("/images/form-circle-image.png") no-repeat;
+  background-position: top -58px left 155px;
+  background-size: 419px 660px;
 }
 
 .form__title {
@@ -372,6 +365,7 @@ select::-ms-expand {
 .main-form__field_checkbox {
   font-size: 1.4rem;
   font-weight: 400;
+  line-height: 1.5;
   color: var(--color-11);
 }
 
@@ -400,4 +394,41 @@ select::-ms-expand {
 .main-form__input_checkbox {
   width: initial;
   height: initial;
+}
+
+
+.main-form__input_checkbox::after {
+  content: '';
+}
+
+.main-form__submit {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.main-form__input-tick {
+  content: '';
+  display: inline-block;
+  width: 20px; 
+  height: 20px;
+  border: 2px solid var(--background-color-6);
+  position: relative;
+}
+
+.main-form__input-tick::before {
+  content: '';
+  display: none;
+  width: 5px;
+  height: 9px;
+  border: solid var(--background-color-6);
+  border-width: 0 2px 2px 0;
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  transform: rotate(45deg);
+}
+
+.main-form__input[type="checkbox"]:checked ~ .main-form__input-tick::before {
+  display: block;
 }

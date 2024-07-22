@@ -309,6 +309,10 @@ address {
 
 .services__title {
   margin-bottom: 50px;
+
+  @media (width >= 480px) {
+    width: 458px;
+  }
 }
 
 .services__select-wrapper {
@@ -325,10 +329,6 @@ address {
   margin: 0 auto 30px;
   border: 2px solid var(--background-color-6);
   padding: 16px 40px 16px 20px;
-  /* background: var(--background-color-9) url("/images/select-list-triangle.svg") no-repeat;
-  background-color: var(--background-color-9);
-  background-size: 10px;
-  background-position: top right; */
   color: var(--color-6);
   font-weight: 700;
   font-size: inherit;
@@ -343,6 +343,10 @@ address {
   display: flex;
   flex-direction: column;
   margin-bottom: 31px;
+
+  @media (width >= 480px) {
+    width: 460px;
+  }
 }
 
 .services__text {

@@ -195,10 +195,9 @@ address {
   text-align: center;
 
   @media (width >= 480px) {
-    width: 350px; 
+    width: 350px;
   }
 }
-
 
 .about {
   padding-top: 44px;
@@ -321,35 +320,36 @@ address {
 }
 
 .services__select-content {
-  margin: 0 auto;
+  position: relative;
   width: calc(100% - 40px);
   height: 55px;
-  position: relative;
+  margin: 0 auto 25px;
 }
 
 .services__select-content::before {
-  content: '';
+  content: "";
+  position: absolute;
+  z-index: 2;
   display: block;
+  width: 8px;
+  height: 8px;
   background: url(/images/services-triangle-icon.svg) no-repeat;
   background-position: center center;
   background-size: 8px 8px;
-    width: 8px;
-    height: 8px;
-  position: absolute;
-  z-index: 2;
-  inset-inline-end: 22px;
-    inset-block-start: 25px;
   transform: rotate(180deg);
+  inset-inline-end: 22px;
+  inset-block-start: 25px;
 }
 
 .services__select-list {
   width: 100%;
   height: 100%;
-  background-color: var(--background-color-9);
-  font-size: inherit;
-  font-weight: 700;
-  color: var(--color-6);
   border: 2px solid var(--background-color-6);
+  padding: 16px 40px 16px 20px;
+  color: var(--color-6);
+  font-weight: 700;
+  font-size: inherit;
+  background-color: var(--background-color-9);
 }
 
 .services__select-list:focus-visible {
@@ -483,9 +483,8 @@ address {
   height: initial;
 }
 
-
 .main-form__input_checkbox::after {
-  content: '';
+  content: "";
 }
 
 .main-form__submit {
@@ -495,18 +494,18 @@ address {
 }
 
 .main-form__input-tick {
-  content: '';
+  content: "";
   position: relative;
   top: 7px;
   display: inline-block;
-  width: 20px; 
+  width: 20px;
   height: 20px;
   margin-right: 8px;
   border: 2px solid var(--background-color-6);
 }
 
 .main-form__input-tick::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 3px;
   left: 6px;
@@ -539,7 +538,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   font: 400 1.4rem /1.85 "Montserrat", sans-serif;
   text-align: center;
 
-  @media(width >= 480px) {
+  @media (width >= 480px) {
     margin-bottom: 11px;
   }
 }
@@ -548,7 +547,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   width: 320px;
   margin: 0 auto 38px;
 
-  @media(width >= 480px) {
+  @media (width >= 480px) {
     margin-bottom: 27px;
   }
 }
@@ -560,5 +559,3 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   color: rgb(255 255 255 / 0.5);
   font: 400 1.2rem /1.85 "Montserrat", sans-serif;
 }
-
-

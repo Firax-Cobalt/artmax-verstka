@@ -610,9 +610,9 @@ address {
   margin: 0 auto;
 
   @media (width >= 640px) {
-    margin: 0;
     position: relative;
     left: 50%;
+    margin: 0;
     transform: translateX(-230px);
   }
 }
@@ -653,12 +653,12 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 
 .footer__wrapper {
   @media (width >= 640px) {
-    width: 600px;
-    margin: 0 auto;
     display: grid;
-    grid-teplate-columns: 255px 320px;
     grid-template-rows: 71px auto auto;
     column-gap: 34px;
+    width: 600px;
+    margin: 0 auto;
+    grid-teplate-columns: 255px 320px;
   }
 }
 
@@ -667,9 +667,9 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   margin: 0 auto 34px;
 
   @media (width >= 640px) {
-    margin: 0 0 39px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    margin: 0 0 39px;
   }
 }
 
@@ -686,9 +686,9 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 
   @media (width >= 640px) {
     display: block;
-    margin: 0 0 20px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
+    margin: 0 0 20px;
     text-align: left;
   }
 }
@@ -706,9 +706,9 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   }
 
   @media (width >= 640px) {
-    margin: 0;
     grid-column: 2 / 3;
     grid-row: 1 / -1;
+    margin: 0;
   }
 }
 

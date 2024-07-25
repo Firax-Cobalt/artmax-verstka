@@ -173,7 +173,7 @@ address {
 
 .introduce {
   position: relative;
-  min-height: 90vh;
+  min-height: 89vh;
   margin-bottom: 60px;
   padding-top: 300px;
   padding-bottom: 39px;
@@ -181,6 +181,11 @@ address {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (width >= 960px) {
+    padding-top: 250px;
+    padding-bottom: 187px;
+  }
 }
 
 .introduce::before {
@@ -201,7 +206,16 @@ address {
   z-index: 1;
   display: block;
   width: 95%;
-  margin: 0 auto 85px;
+  margin: 0 auto;
+
+  @media (width >= 640px) {
+    width: 621px;
+  }
+
+  @media (width >= 960px) {
+    width: 931px;
+    height: 159px;
+  }
 }
 
 .introduce__text {
@@ -217,6 +231,12 @@ address {
 
   @media (width >= 640px) {
     width: 78%;
+    font-size: 2rem;
+    line-height: 1.55;
+  }
+
+  @media (width >= 960px) {
+    width: 70%;
     font-size: 2rem;
     line-height: 1.55;
   }

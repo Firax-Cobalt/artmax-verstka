@@ -175,9 +175,12 @@ address {
   position: relative;
   min-height: 90vh;
   margin-bottom: 60px;
-  padding-top: 153px;
+  padding-top: 300px;
   padding-bottom: 39px;
   background-color: var(--background-color-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .introduce::before {
@@ -185,7 +188,7 @@ address {
   position: absolute;
   display: block;
   width: 100%;
-  height: 119%;
+  height: 100vh;
   background: url("../images/introduce-background.jpg") no-repeat;
   background-position: 47% 100%;
   background-size: cover;

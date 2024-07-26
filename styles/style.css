@@ -192,11 +192,11 @@ address {
 
 .introduce {
   position: relative;
-  min-height: 89vh;
-  padding-top: 296px;
+  min-height: 100vh;
+  padding-top: 385px;
   padding-bottom: 39px;
-  background-color: var(--background-color-3);
-
+  background: var(--background-color-3) url(../images/introduce-background.jpg)
+    no-repeat center / cover;
   @media (width >= 480px) {
     padding-bottom: 41px;
   }
@@ -205,29 +205,6 @@ address {
     padding-top: 250px;
     padding-bottom: 187px;
   }
-}
-
-.introduce::before {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 105vh;
-  background: url("../images/introduce-background.jpg") no-repeat;
-  background-position: 47% 100%;
-  background-size: cover;
-  inset-block-start: -90px;
-  inset-inline-start: 0;
-
-  @media (width >= 640px) {
-    height: 110vh;
-  }
-}
-
-.introduce__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .introduce__logo {
@@ -364,7 +341,7 @@ address {
 
 .about__list-description-item {
   position: relative;
-  width: 276px;
+  width: 300px;
   min-height: 96px;
   margin: 0 auto;
   padding-left: 24px;
@@ -389,6 +366,7 @@ address {
 }
 
 .about__list-title {
+  margin-bottom: 5px;
   display: flex;
   align-items: flex-end;
   font-weight: 700;
@@ -397,6 +375,7 @@ address {
 }
 
 .about__list-title-accent {
+  padding-left: 5px;
   color: var(--color-5);
   font-weight: 500;
   font-size: 2rem;
@@ -427,7 +406,7 @@ address {
 }
 
 .services__title {
-  margin-bottom: 50px;
+  margin-bottom: 29px;
 
   @media (width >= 480px) {
     width: 458px;
@@ -448,7 +427,7 @@ address {
   position: relative;
   width: calc(100% - 40px);
   height: 55px;
-  margin: 0 auto 25px;
+  margin: 0 auto 20px;
 
   @media (width >= 640px) {
     position: relative;
@@ -545,7 +524,7 @@ address {
   margin: 0 auto;
   border: 1px solid var(--background-color-8);
   border-radius: 10px;
-  padding: 22px 13px 20px 48px;
+  padding: 22px 11px 20px 48px;
 }
 
 .services__item::before {
@@ -590,7 +569,7 @@ address {
 .form {
   padding-top: 60px;
   background: url("../images/form-circle-image-mobile.png") no-repeat;
-  background-position: top -58px left 155px;
+  background-position: top -57px left 234px;
   background-size: 419px 660px;
 
   @media (width >= 480px) {
@@ -683,7 +662,9 @@ address {
 .main-form__submit {
   display: block;
   width: 276px;
-  margin: 0 auto;
+  position: relative;
+  left: 50%;
+  transform: translateX(-54%);
 
   @media (width >= 640px) {
     position: relative;
@@ -771,7 +752,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 
 .footer__map {
   width: 100%;
-  margin: 0 auto 38px;
+  margin: 0 auto 35px;
 
   @media (width >= 337px) {
     width: 320px;

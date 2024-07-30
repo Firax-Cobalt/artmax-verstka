@@ -35,11 +35,29 @@
       <section class="introduce">
         <div class="introduce__wrapper">
           <h1 class="visually-hidden">ArtMax - интернет защита</h1>
-          <img
-            class="introduce__logo"
-            src="images/artmax-logo.svg"
-            alt="Артмакс - интернет защита"
-          />
+          <picture>
+            <source
+              srcset="images/artmax-logo/artmax-logo-desktop.svg"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="images/artmax-logo/artmax-logo-tablet-horizontal.svg"
+              media="(min-width: 960px) and (max-width: 1199px)"
+            />
+            <source
+              srcset="images/artmax-logo/artmax-logo-tablet-vertical.svg"
+              media="(min-width: 640px) and (max-width: 959px)"
+            />
+            <source
+              srcset="images/artmax-logo/artmax-logo-mobile-horizontal.svg"
+              media="(min-width: 480px) and (max-width: 639px)"
+            />
+            <img
+              class="introduce__logo"
+              src="images/artmax-logo/artmax-logo-mobile-vertical.svg"
+              alt="Артмакс - интернет защита"
+            />
+          </picture>
           <p class="introduce__text wrapper">
             Благодаря нашей многолетней практике, мы получили обширный опыт и
             можем предложить лучшие решения, которые работают в реальных
@@ -187,7 +205,9 @@
       <section class="form">
         <div class="form__wrapper">
           <h2 class="form__title title wrapper">
-            Заполните форму ниже,<br /> и мы вскоре свяжемся c <br /> вами
+            Заполните форму ниже,<br />
+            и мы вскоре свяжемся c <br />
+            вами
           </h2>
           <form class="main-form" method="post" action="#">
             <p class="main-form__field wrapper">

@@ -259,6 +259,7 @@ address {
 }
 
 .about {
+  position: relative;
   padding-top: 44px;
   padding-bottom: 78px;
 
@@ -270,6 +271,8 @@ address {
   @media (min-width: 640px) {
     padding-top: 75px;
     padding-bottom: 117px;
+
+    background: url(../images/about-background-dotes.svg) no-repeat top 130px right -130px / 200px 201px;
   }
 
   @media (min-width: 960px) {

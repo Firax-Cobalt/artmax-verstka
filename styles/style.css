@@ -205,8 +205,13 @@ address {
   padding-bottom: 39px;
   background: var(--background-color-3) url(../images/introduce-background.jpg)
     no-repeat center / cover;
+
   @media (min-width: 480px) {
     padding-bottom: 41px;
+  }
+
+  @media (min-width: 640px) {
+    padding-top: 380px;
   }
 
   @media (min-width: 960px) {
@@ -224,6 +229,7 @@ address {
 
   @media (min-width: 640px) {
     width: 621px;
+    margin-bottom: 162px;
   }
 
   @media (min-width: 960px) {
@@ -249,7 +255,7 @@ address {
     line-height: 1.55;
   }
 
-  @media (min-width:960px) {
+  @media (min-width: 960px) {
     width: 70%;
     font-size: 2rem;
     line-height: 1.55;
@@ -263,6 +269,10 @@ address {
   @media (min-width: 480px) {
     padding-top: 54px;
     padding-bottom: 95px;
+  }
+
+  @media (min-width: 640px) {
+    padding-top: 75px;
   }
 }
 
@@ -284,28 +294,17 @@ address {
   }
 }
 
-.about__content {
+/* .about__content {
   @media (min-width: 640px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
+} */
 
-.about__image-wrapper {
-  margin-bottom: 82px;
-
-  @media (min-width: 480px) {
-    margin-bottom: 84px;
-  }
-}
-
-.about__image {
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-
-  @media (min-width: 480px) {
-    width: 387px;
+.about__text-wrapper {
+  @media (min-width: 640px) {
+    width: 617px;
+    margin: 0 auto 61px;
   }
 }
 
@@ -321,6 +320,9 @@ address {
 
   @media (min-width: 640px) {
     font-size: 1.8rem;
+    margin: 0;
+    margin-bottom: 30px;
+    width: auto;
   }
 }
 
@@ -337,6 +339,64 @@ address {
   @media (min-width: 640px) {
     margin: 0;
     font-size: 1.8rem;
+    width: auto;
+  }
+}
+
+.about__image-wrapper {
+  margin-bottom: 82px;
+
+  @media (min-width: 480px) {
+    margin-bottom: 84px;
+  }
+}
+
+.about__info-wrapper {
+  @media (min-width: 640px) {
+    position: relative;
+    width: 640px;
+    display: grid;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 40px;
+    margin: 0 auto;
+  }
+}
+
+.about__image-wrapper {
+  margin: 0 auto;
+  width: 286px;
+  height: 286px;
+
+  @media (min-width: 480px) {
+    width: 387px;
+    height: 387px;
+  }
+
+  @media (min-width: 640px) {
+    width: 317px;
+    height: 317px;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    /* position: absolute; */
+    /* top: 29px;
+    left: -81px; */
+    /* transform: translateX(-60px); */
+    margin-bottom: 0;
+  }
+}
+
+.about__image {
+  display: block;
+  border-radius: 50%;
+
+  @media (min-width: 480px) {
+    width: 387px;
+  }
+
+  @media (min-width: 640px) {
+    width: 317px;
+    height: 317px;
   }
 }
 
@@ -348,6 +408,12 @@ address {
 
   @media (min-width: 480px) {
     margin-bottom: 25px;
+  }
+
+  @media (min-width: 640px) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    margin: 0;
   }
 }
 
@@ -361,6 +427,11 @@ address {
   @media (min-width: 480px) {
     width: 346px;
     padding-left: 69px;
+  }
+
+  @media (min-width: 640px) {
+    width: 360px;
+    padding-left: 34px;
   }
 }
 
@@ -379,6 +450,13 @@ address {
   }
 }
 
+@media (min-width: 640px) {
+  .about__list-description-item::before {
+    inset-inline-start: 9px;
+    inset-block-start: -2px;
+  }
+}
+
 .about__list-description-item::after {
   content: "";
   position: absolute;
@@ -391,6 +469,13 @@ address {
 @media (min-width: 480px) {
   .about__list-description-item::after {
     inset-inline-start: 43px;
+  }
+}
+
+@media (min-width: 640px) {
+  .about__list-description-item::after {
+    inset-inline-start: 9px;
+    inset-block-start: -2px;
   }
 }
 
@@ -425,6 +510,11 @@ address {
   @media (min-width: 640px) {
     width: 298px;
     margin: 0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: start;
+    position: relative;
+    left: 7px;
   }
 }
 
@@ -678,7 +768,7 @@ address {
   @media (min-width: 480px) {
     margin: 0 auto;
     padding-bottom: 96px;
-   border-radius: 30px 30px 0 0;
+    border-radius: 30px 30px 0 0;
   }
 
   @media (min-width: 620px) {
@@ -814,7 +904,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
     column-gap: 34px;
     width: 600px;
     margin: 0 auto;
-    grid-teplate-columns: 255px 320px;
+    grid-template-columns: 255px 320px;
   }
 }
 

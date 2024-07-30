@@ -155,17 +155,17 @@ address {
   line-height: 1.2;
 
   @media (min-width: 640px) {
-    position: relative;
-    left: 50%;
+    /* position: relative; */
+    /* left: 50%; */
     font-size: 3.6rem;
-    transform: translateX(-311px);
+    /* transform: translateX(-311px); */
   }
 
   @media (min-width: 960px) {
-    position: static;
+    /* position: static; */
     font-size: 4.8rem;
     line-height: 1.2;
-    transform: translateX(0);
+    /* transform: translateX(0); */
   }
 }
 
@@ -273,6 +273,7 @@ address {
 
   @media (min-width: 640px) {
     padding-top: 75px;
+    padding-bottom: 117px;
   }
 }
 
@@ -285,7 +286,7 @@ address {
 
   @media (min-width: 640px) {
     width: 617px;
-    margin: 0 0 44px;
+    margin: 0 auto 44px;
   }
 
   @media (min-width: 960px) {
@@ -294,17 +295,10 @@ address {
   }
 }
 
-/* .about__content {
-  @media (min-width: 640px) {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-} */
-
 .about__text-wrapper {
   @media (min-width: 640px) {
     width: 617px;
-    margin: 0 auto 61px;
+    margin: 0 auto 64px;
   }
 }
 
@@ -378,9 +372,9 @@ address {
     height: 317px;
     grid-column: 1 / 2;
     grid-row: 1 / -1;
-    /* position: absolute; */
-    /* top: 29px;
-    left: -81px; */
+    position: absolute;
+    top: 29px;
+    left: -81px;
     /* transform: translateX(-60px); */
     margin-bottom: 0;
   }
@@ -430,7 +424,8 @@ address {
   }
 
   @media (min-width: 640px) {
-    width: 360px;
+    width: 300px;
+    margin: 0;
     padding-left: 34px;
   }
 }
@@ -526,6 +521,10 @@ address {
   @media (min-width: 480px) {
     padding-top: 84px;
   }
+
+  @media (min-width: 640px) {
+    padding-top: 112px;
+  }
 }
 
 .services__title {
@@ -536,7 +535,8 @@ address {
   }
 
   @media (min-width: 640px) {
-    margin: 0;
+    width: 619px;
+    margin: 0 auto;
     margin-bottom: 32px;
   }
 }
@@ -746,16 +746,21 @@ address {
 
   @media (min-width: 480px) {
     width: 373px;
-    margin: 0 0 27px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-61%);
+    margin: 0 auto 27px;
   }
 
   @media (min-width: 640px) {
-    width: 503px;
-    margin: 0;
+    width: 620px;
+    margin: 0 auto;
     margin-bottom: 23px;
+  }
+}
+
+.form__title br {
+  display: none;
+
+  @media (min-width: 640px) {
+    display: block;
   }
 }
 
@@ -777,6 +782,7 @@ address {
 
   @media (min-width: 640px) {
     width: 620px;
+    padding: 68px 61px 55px;
     margin: 0 auto;
     border-radius: 30px;
   }
@@ -794,6 +800,10 @@ address {
 
   @media (min-width: 480px) {
     width: 457px;
+  }
+
+  @media (min-width: 640px) {
+    width: 498px;
   }
 }
 
@@ -821,6 +831,7 @@ address {
   @media (min-width: 480px) {
     width: inherit;
   }
+
 }
 
 .main-form__input:focus {
@@ -855,7 +866,7 @@ address {
     position: relative;
     left: 50%;
     margin: 0;
-    transform: translateX(-230px);
+    transform: translateX(-249px);
   }
 }
 
@@ -893,7 +904,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
     url("../images/introduce-background.jpg") center / cover;
 
   @media (min-width: 480px) {
-    padding-top: 55px;
+    padding: 51px 21px 43px 20px;
   }
 }
 

@@ -580,6 +580,12 @@ address {
     margin: 0 auto;
     margin-bottom: 32px;
   }
+
+  @media (min-width: 640px) {
+    width: 619px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
 }
 
 .services__select-wrapper {

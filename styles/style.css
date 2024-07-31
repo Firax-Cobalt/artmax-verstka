@@ -676,6 +676,10 @@ address {
     margin: 0 auto;
     padding: 0;
   }
+
+  @media (min-width: 1200px) {
+    width: 1169px;
+  }
 }
 
 .services__title {
@@ -695,6 +699,10 @@ address {
   @media (min-width: 960px) {
     margin: 0 0 32px;
     padding: 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 712px;
   }
 }
 
@@ -788,7 +796,9 @@ address {
 
   @media (min-width: 1200px) {
     padding-bottom: 94px;
-  }
+    display: flex;
+    flex-wrap: wrap;
+   }
 }
 
 .services__content-wrapper_protect_bot {
@@ -911,6 +921,10 @@ address {
 
   @media (min-width: 640px) {
     font-size: 1.8rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
   }
 }
 

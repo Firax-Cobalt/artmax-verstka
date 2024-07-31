@@ -556,7 +556,6 @@ address {
 
 .services {
   padding-top: 50px;
-  padding-bottom: 90px;
   background-color: var(--background-color-9);
 
   @media (min-width: 480px) {
@@ -564,7 +563,15 @@ address {
   }
 
   @media (min-width: 640px) {
-    padding: 112px 20px 72px;
+    padding-top: 112px;
+  }
+}
+
+.services__wrapper {
+  @media (min-width: 960px) {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -579,6 +586,12 @@ address {
     width: 619px;
     margin: 0 auto;
     margin-bottom: 32px;
+    padding-left: 10px;
+  }
+
+  @media (min-width: 960px) {
+    margin: 0 0 32px;
+    padding: 0;
   }
 }
 
@@ -633,12 +646,135 @@ address {
   outline: none;
 }
 
+.services__content-wrapper {
+  @media (min-width: 640px) {
+    padding-left: 10px;
+    width: 620px;
+  }
+
+  @media (min-width: 960px) {
+    margin: 0;
+    width: 818px;
+  }
+}
+
 .services__content-wrapper_protect_attack {
+  padding-bottom: 90px;
+
+  @media (min-width: 480px) {
+    padding-bottom: 87px;
+  }
+
   @media (min-width: 640px) {
     display: flex;
     flex-wrap: wrap;
-    width: 620px;
     margin: 0 auto;
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: 960px) {
+    width: 818px;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 37px;
+    padding-bottom: 70px;
+    padding-left: 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
+}
+
+.services__content-wrapper_protect_bot {
+  padding-bottom: 87px;
+
+  @media (min-width: 480px) {
+    padding-bottom: 52px;
+  }
+
+  @media (min-width: 640px) {
+    margin: 0 auto;
+    padding: 0 10px 107px;
+  }
+
+  @media (min-width: 960px) {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 249px;
+  }
+}
+
+.services__content-wrapper_protect_bot .services__text-wrapper {
+  @media (min-width: 480px) {
+    font-size: 1.8rem;
+    margin-bottom: 34px;
+  }
+
+  @media (min-width: 640px) {
+    width: 609px;
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: 960px) {
+    width: 758px;
+  }
+}
+
+.services__content-wrapper_protect_bot .services__submit {
+  @media (min-width: 960px) {
+    position: static;
+  }
+}
+
+.services__content-wrapper_protect_hacking {
+  padding-bottom: 87px;
+
+  @media (min-width: 480px) {
+    padding-bottom: 67px;
+  }
+
+  @media (min-width: 640px) {
+    margin: 0 auto;
+    padding-bottom: 84px;
+  }
+
+  @media (min-width: 960px) {
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 87px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-bottom: 282px;
+  }
+}
+
+.services__content-wrapper_protect_hacking .services__text-wrapper {
+  @media (min-width: 480px) {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 640px) {
+    width: 609px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 960px) {
+    width: 758px;
+  }
+}
+
+.services__content-wrapper_protect_hacking .services__submit {
+  @media (min-width: 960px) {
+    position: static;
   }
 }
 
@@ -657,6 +793,13 @@ address {
     margin: 0;
     margin-right: 25px;
     margin-bottom: 40px;
+  }
+
+  @media (min-width: 960px) {
+    width: 470px;
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
   }
 }
 
@@ -682,6 +825,11 @@ address {
     width: 274px;
     margin: 0;
   }
+
+  @media (min-width: 960px) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
 }
 
 .services__item {
@@ -698,6 +846,12 @@ address {
 
   @media (min-width: 640px) {
     padding: 22px 12px 24px 46px;
+  }
+
+  @media (min-width: 960px) {
+    width: 293px;
+    min-height: 126px;
+    padding: 23px 18px 28px 58px;
   }
 }
 
@@ -728,11 +882,19 @@ address {
   @media (min-width: 480px) {
     order: 3;
   }
+
+  @media (min-width: 960px) {
+    order: 2;
+  }
 }
 
 .services__item:nth-child(3) {
   @media (min-width: 480px) {
     order: 2;
+  }
+
+  @media (min-width: 960px) {
+    order: 3;
   }
 }
 
@@ -767,6 +929,14 @@ address {
   @media (min-width: 640px) {
     width: 316px;
     margin: 0;
+  }
+
+  @media (min-width: 960px) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: start;
+    position: relative;
+    top: -30px;
   }
 }
 

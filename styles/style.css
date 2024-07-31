@@ -953,8 +953,9 @@ address {
 
   @media (min-width: 960px) {
     padding-bottom: 92px;
-    background: url("../images/form-circle-image-tablet.svg") no-repeat, url("../images/background-dotes.svg") no-repeat top left / 200px 201px;
-    background-position: top -120px left 460px;
+    background: url("../images/form-circle-image-tablet.svg") no-repeat, url("../images/background-dotes.svg") no-repeat;
+    background-position: top -90px right -638px, top 30% left -8px;
+    background-size: auto, 200px 201px;
   }
 }
 

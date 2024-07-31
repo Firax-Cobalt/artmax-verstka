@@ -165,15 +165,33 @@ address {
 }
 
 .header {
-  display: flex;
   justify-content: center;
   background-color: var(--background-color-3);
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    min-height: 58px;
+    padding: 26px 43px 0 44px;
+  }
 }
 
-.main-nav {
-  display: none;
-  @media screen and (min-width: 1200px) {
-    display: block;
+.nav-list {
+  @media (min-width: 1200px) {
+    display: flex;
+    gap: 20px 42px;
+    color: var(--color-2);
+    font-size: inherit;
+    padding-top: 24px;
+  }
+}
+
+.nav-list__link {
+  @media (min-width: 1200px) {
+    color: var(--color-2);
+    font-weight: 500;
+    font-size: inherit;
   }
 }
 
@@ -188,8 +206,9 @@ address {
 
 .button-applictation {
   display: none;
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
     display: block;
+    min-width: 275px;
   }
 }
 
@@ -231,6 +250,11 @@ address {
     width: 931px;
     height: 159px;
     margin-bottom: 52px;
+  }
+
+  @media (min-width: 960px) {
+    width: 1200px;
+    height: 205px;
   }
 }
 

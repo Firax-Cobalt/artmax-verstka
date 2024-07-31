@@ -98,6 +98,7 @@ address {
 }
 
 .page {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -105,19 +106,18 @@ address {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1;
-  position: relative;
 }
 
 .page::after {
   content: "";
+  position: absolute;
+  display: block;
   width: 70px;
   height: 56px;
-  display: block;
-  position: absolute;
+  background: url(../images/artmax-icon.svg) no-repeat center / 95%;
+  transform: translateX(-50%);
   inset-inline-start: 50%;
   inset-block-start: 35px;
-  transform: translateX(-50%);
-  background: url(../images/artmax-icon.svg) no-repeat center / 95%;
 }
 
 @media (min-width: 480px) {
@@ -272,7 +272,8 @@ address {
     padding-top: 75px;
     padding-bottom: 117px;
 
-    background: url(../images/about-background-dotes.svg) no-repeat top 130px right -130px / 200px 201px;
+    background: url("../images/background-dotes.svg") no-repeat top 130px
+      right -130px / 200px 201px;
   }
 
   @media (min-width: 960px) {
@@ -282,11 +283,11 @@ address {
 
 .about__wrapper {
   @media (min-width: 960px) {
+    display: grid;
+    grid-template-columns: repeat(2, 469px);
+    grid-template-rows: repeat(4, auto);
     width: 938px;
     margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 469px);
-  grid-template-rows: repeat(4, auto);
   }
 }
 
@@ -303,10 +304,10 @@ address {
   }
 
   @media (min-width: 960px) {
-    width: 938px;
-    margin: 0 auto 48px;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
+    width: 938px;
+    margin: 0 auto 48px;
   }
 }
 
@@ -319,9 +320,9 @@ address {
   @media (min-width: 960px) {
     grid-column: 2 / -1;
     grid-row: 2 / 3;
-    padding-left: 10px;
-    margin: 0 0 35px;
     width: 457px;
+    margin: 0 0 35px;
+    padding-left: 10px;
   }
 }
 
@@ -336,10 +337,10 @@ address {
   }
 
   @media (min-width: 640px) {
-    font-size: 1.8rem;
+    width: auto;
     margin: 0;
     margin-bottom: 30px;
-    width: auto;
+    font-size: 1.8rem;
   }
 }
 
@@ -354,20 +355,20 @@ address {
   }
 
   @media (min-width: 640px) {
+    width: auto;
     margin: 0;
     font-size: 1.8rem;
-    width: auto;
   }
 }
 
 .about__info-wrapper {
   @media (min-width: 640px) {
     position: relative;
-    width: 640px;
     display: grid;
     grid-template-columns: repeat(2, 320px);
     grid-template-rows: repeat(2, auto);
     row-gap: 40px;
+    width: 640px;
     margin: 0 auto;
   }
 
@@ -377,11 +378,11 @@ address {
     row-gap: 0;
   }
 }
- 
+
 .about__image-wrapper {
-  margin: 0 auto 82px;
   width: 286px;
   height: 286px;
+  margin: 0 auto 82px;
 
   @media (min-width: 480px) {
     width: 387px;
@@ -390,21 +391,21 @@ address {
   }
 
   @media (min-width: 640px) {
-    width: 317px;
-    height: 317px;
-    grid-column: 1 / 2;
-    grid-row: 1 / -1;
     position: absolute;
     top: 29px;
     left: -81px;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    width: 317px;
+    height: 317px;
     margin-bottom: 0;
   }
 
   @media (min-width: 960px) {
-    width: 379px;
-    height: 379px;
     top: -287px;
     left: -150px;
+    width: 379px;
+    height: 379px;
   }
 }
 
@@ -512,9 +513,9 @@ address {
 }
 
 .about__list-title {
-  margin-bottom: 5px;
   display: flex;
   align-items: flex-end;
+  margin-bottom: 5px;
   font-weight: 700;
   font-size: 60px;
   line-height: 1;
@@ -540,13 +541,13 @@ address {
   }
 
   @media (min-width: 640px) {
-    width: 298px;
-    margin: 0;
+    position: relative;
+    left: 7px;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     align-self: start;
-    position: relative;
-    left: 7px;
+    width: 298px;
+    margin: 0;
   }
 
   @media (min-width: 960px) {
@@ -648,13 +649,13 @@ address {
 
 .services__content-wrapper {
   @media (min-width: 640px) {
-    padding-left: 10px;
     width: 620px;
+    padding-left: 10px;
   }
 
   @media (min-width: 960px) {
-    margin: 0;
     width: 818px;
+    margin: 0;
   }
 }
 
@@ -673,12 +674,12 @@ address {
   }
 
   @media (min-width: 960px) {
-    width: 818px;
-    margin: 0;
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     column-gap: 37px;
+    width: 818px;
+    margin: 0;
     padding-bottom: 70px;
     padding-left: 0;
   }
@@ -702,8 +703,8 @@ address {
 
   @media (min-width: 960px) {
     margin: 0;
-    padding-left: 0;
     padding-bottom: 87px;
+    padding-left: 0;
   }
 
   @media (min-width: 1200px) {
@@ -713,8 +714,8 @@ address {
 
 .services__content-wrapper_protect_bot .services__text-wrapper {
   @media (min-width: 480px) {
-    font-size: 1.8rem;
     margin-bottom: 34px;
+    font-size: 1.8rem;
   }
 
   @media (min-width: 640px) {
@@ -747,8 +748,8 @@ address {
 
   @media (min-width: 960px) {
     margin: 0;
-    padding-left: 0;
     padding-bottom: 87px;
+    padding-left: 0;
   }
 
   @media (min-width: 1200px) {
@@ -758,8 +759,8 @@ address {
 
 .services__content-wrapper_protect_hacking .services__text-wrapper {
   @media (min-width: 480px) {
-    font-size: 1.8rem;
     margin-bottom: 20px;
+    font-size: 1.8rem;
   }
 
   @media (min-width: 640px) {
@@ -796,10 +797,10 @@ address {
   }
 
   @media (min-width: 960px) {
-    width: 470px;
-    margin: 0;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    width: 470px;
+    margin: 0;
   }
 }
 
@@ -909,13 +910,6 @@ address {
   line-height: 1.55;
 }
 
-/* .services__submit-wrapper {
-  @media (min-width: 640px) {
-    width: 620px;
-    margin: 0 auto;
-  }
-} */
-
 .services__submit {
   display: block;
   width: 300px;
@@ -932,11 +926,11 @@ address {
   }
 
   @media (min-width: 960px) {
+    position: relative;
+    top: -30px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     align-self: start;
-    position: relative;
-    top: -30px;
   }
 }
 
@@ -948,12 +942,19 @@ address {
 
   @media (min-width: 480px) {
     padding-top: 75px;
+    background-position: top -47px left 304px;
   }
 
   @media (min-width: 640px) {
     padding-bottom: 71px;
     background: url("../images/form-circle-image-tablet.svg") no-repeat;
-    background-position: top -120px left 510px;
+    background-position: top -120px left 460px;
+  }
+
+  @media (min-width: 960px) {
+    padding-bottom: 92px;
+    background: url("../images/form-circle-image-tablet.svg") no-repeat, url("../images/background-dotes.svg") no-repeat top left / 200px 201px;
+    background-position: top -120px left 460px;
   }
 }
 
@@ -961,22 +962,35 @@ address {
   margin-bottom: 34px;
 
   @media (min-width: 480px) {
+    position: relative;
+    left: 50%;
     width: 373px;
-    margin: 0 auto 27px;
+    margin: 0 0 27px;
+    transform: translateX(calc((-60%) - 6px));
   }
 
   @media (min-width: 640px) {
+    position: static;
     width: 620px;
-    margin: 0 auto;
-    margin-bottom: 23px;
+    margin: 0 auto 23px;
+    transform: translateX(0);
+  }
+
+  @media (min-width: 960px) {
+    width: 867px;
+    margin: 0 0 57px;
   }
 }
 
-.form__title br {
-  display: none;
+.form__title-accent {
+  display: inline-block;
 
   @media (min-width: 640px) {
-    display: block;
+    width: 503px;
+  }
+
+  @media (min-width: 960px) {
+    width: auto;
   }
 }
 
@@ -988,8 +1002,8 @@ address {
 
   @media (min-width: 480px) {
     margin: 0 auto;
-    padding-bottom: 96px;
     border-radius: 30px 30px 0 0;
+    padding-bottom: 96px;
   }
 
   @media (min-width: 620px) {
@@ -998,9 +1012,14 @@ address {
 
   @media (min-width: 640px) {
     width: 620px;
-    padding: 68px 61px 55px;
     margin: 0 auto;
     border-radius: 30px;
+    padding: 68px 61px 55px;
+  }
+
+  @media (min-width: 960px) {
+    width: 720px;
+    padding: 68px 50px 76px;
   }
 }
 
@@ -1020,6 +1039,10 @@ address {
 
   @media (min-width: 640px) {
     width: 498px;
+  }
+
+  @media (min-width: 960px) {
+    width: 613px;
   }
 }
 
@@ -1047,7 +1070,6 @@ address {
   @media (min-width: 480px) {
     width: inherit;
   }
-
 }
 
 .main-form__input:focus {
@@ -1064,18 +1086,18 @@ address {
 }
 
 .main-form__submit {
-  display: block;
-  width: 276px;
   position: relative;
   left: 50%;
+  display: block;
+  width: 276px;
   transform: translateX(-54%);
 
   @media (min-width: 480px) {
     position: relative;
     left: 50%;
     margin: 0;
-    transform: translateX(-83%);
     font-weight: 600;
+    transform: translateX(-83%);
   }
 
   @media (min-width: 640px) {
@@ -1083,6 +1105,11 @@ address {
     left: 50%;
     margin: 0;
     transform: translateX(-249px);
+  }
+
+  @media (min-width: 960px) {
+    left: 3px;
+    transform: translateX(0);
   }
 }
 
@@ -1127,11 +1154,11 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 .footer__wrapper {
   @media (min-width: 640px) {
     display: grid;
+    grid-template-columns: 255px 320px;
     grid-template-rows: 71px auto auto;
     column-gap: 34px;
     width: 600px;
     margin: 0 auto;
-    grid-template-columns: 255px 320px;
   }
 }
 
@@ -1140,10 +1167,10 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   margin: 0 auto 34px;
 
   @media (min-width: 640px) {
-    margin-bottom: 42px;
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     margin: 0 0 39px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: 480px) {

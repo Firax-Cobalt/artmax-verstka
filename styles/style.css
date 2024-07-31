@@ -232,6 +232,10 @@ address {
     padding-top: 340px;
     padding-bottom: 187px;
   }
+
+  @media (min-width: 1200px) {
+    padding-top: 235px;
+  }
 }
 
 .introduce__logo {
@@ -255,6 +259,10 @@ address {
   @media (min-width: 960px) {
     width: 1200px;
     height: 205px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 62px;
   }
 }
 
@@ -280,6 +288,10 @@ address {
     font-size: 2rem;
     line-height: 1.55;
   }
+
+  @media (min-width: 1200px) {
+    width: 59%;
+  }
 }
 
 .about {
@@ -302,6 +314,8 @@ address {
 
   @media (min-width: 960px) {
     padding-top: 113px;
+    background: url("../images/background-dotes.svg") no-repeat top 227px
+      right -78px / 200px 201px;
   }
 }
 

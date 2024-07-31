@@ -980,6 +980,9 @@ address {
   @media (min-width: 960px) {
     width: 867px;
     margin: 0 0 57px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-55%);
   }
 }
 

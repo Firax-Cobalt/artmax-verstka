@@ -162,6 +162,10 @@ address {
     font-size: 4.8rem;
     line-height: 1.2;
   }
+
+  @media (min-width: 1200px) {
+    font-size: 6.1rem;
+  }
 }
 
 .header {
@@ -317,6 +321,12 @@ address {
     background: url("../images/background-dotes.svg") no-repeat top 227px
       right -78px / 200px 201px;
   }
+
+  @media (min-width: 1200px) {
+    padding-top: 113px;
+    background: url("../images/background-dotes.svg") no-repeat top 184px
+      right 20px / 200px 201px;
+  }
 }
 
 .about__wrapper {
@@ -326,6 +336,11 @@ address {
     grid-template-rows: repeat(4, auto);
     width: 938px;
     margin: 0 auto;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1199px;
+    grid-template-columns: auto 578px;
   }
 }
 
@@ -347,6 +362,11 @@ address {
     width: 938px;
     margin: 0 auto 48px;
   }
+
+  @media (min-width: 1200px) {
+    width: 1199px;
+    margin-bottom: 55px;
+  }
 }
 
 .about__text-wrapper {
@@ -361,6 +381,12 @@ address {
     width: 457px;
     margin: 0 0 35px;
     padding-left: 10px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 557px;
+    margin: 0 0 41px;
+    padding: 0;
   }
 }
 
@@ -380,6 +406,10 @@ address {
     margin-bottom: 30px;
     font-size: 1.8rem;
   }
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
+  }
 }
 
 .about__text {
@@ -396,6 +426,10 @@ address {
     width: auto;
     margin: 0;
     font-size: 1.8rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 2rem;
   }
 }
 
@@ -444,6 +478,13 @@ address {
     left: -150px;
     width: 379px;
     height: 379px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 487px;
+    height: 487px;
+    top: -268px;
+    left: -382px;
   }
 }
 
@@ -504,6 +545,11 @@ address {
     margin: 0;
     padding-left: 34px;
   }
+
+  @media (min-width: 1200px) {
+    width: 346px;
+    padding-left: 49px;
+  }
 }
 
 .about__list-description-item::before {
@@ -528,6 +574,13 @@ address {
   }
 }
 
+@media (min-width: 1200px) {
+  .about__list-description-item::before {
+    inset-inline-start: 22px;
+    inset-block-start: -4px;
+  }
+}
+
 .about__list-description-item::after {
   content: "";
   position: absolute;
@@ -546,6 +599,13 @@ address {
 @media (min-width: 640px) {
   .about__list-description-item::after {
     inset-inline-start: 9px;
+    inset-block-start: -4px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about__list-description-item::after {
+    inset-inline-start: 22px;
     inset-block-start: -2px;
   }
 }
@@ -590,6 +650,10 @@ address {
 
   @media (min-width: 960px) {
     width: 316px;
+  }
+
+  @media (min-width: 1200px) {
+    left: 22px;
   }
 }
 

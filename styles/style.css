@@ -1538,8 +1538,19 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   font-size: 2.8rem;
   line-height: 1.2;
   width: 90%;
+  margin-bottom: 38px;
+}
+
+.privacy-list__item {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
 }
 
 .privacy-list__title {
   font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.privacy-list__list-text {
+  line-height: 1.45;
 }

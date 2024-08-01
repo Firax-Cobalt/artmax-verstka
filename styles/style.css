@@ -118,6 +118,7 @@ address {
   transform: translateX(-50%);
   inset-inline-start: 50%;
   inset-block-start: 35px;
+  z-index: 1;
 }
 
 @media (min-width: 480px) {
@@ -178,6 +179,10 @@ address {
     justify-content: space-between;
     min-height: 58px;
     padding: 26px 43px 0 44px;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: transparent;
   }
 }
 
@@ -196,6 +201,13 @@ address {
     color: var(--color-2);
     font-weight: 500;
     font-size: inherit;
+    transition: color 0.155s ease-in-out;
+  }
+}
+
+.nav-list__link:hover {
+  @media (min-width: 1200px) {
+    color: var(--color-10);
   }
 }
 
@@ -238,7 +250,7 @@ address {
   }
 
   @media (min-width: 1200px) {
-    padding-top: 235px;
+    padding-top: 320px;
   }
 }
 
@@ -294,7 +306,7 @@ address {
   }
 
   @media (min-width: 1200px) {
-    width: 59%;
+    width: 43   %;
   }
 }
 
@@ -1359,8 +1371,8 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   }
 
   @media (min-width: 1200px) {
-    margin: 0;
-    width: auto;
+    margin: 0 auto;
+    width: 1083px;
     grid-template-columns: 383px 700px;
   }
 }

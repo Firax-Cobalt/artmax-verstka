@@ -1112,6 +1112,18 @@ address {
     background-position: top -90px right -638px, top 30% left -8px;
     background-size: auto, 200px 201px;
   }
+
+  @media (min-width: 1200px) {
+    padding: 114px 0 112px;
+    background-position: top 105px right -518px, top 30px left 22px;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: 1200px) {
+    width: 1199px;
+    margin: 0 auto;
+  }
 }
 
 .form__title {
@@ -1139,6 +1151,13 @@ address {
     left: 50%;
     transform: translateX(-55%);
   }
+
+  @media (min-width: 1200px) {
+    width: 990px;
+    position: static;
+    transform: translateX(0);
+    margin: 0 0 65px;
+  }
 }
 
 .form__title-accent {
@@ -1149,7 +1168,7 @@ address {
   }
 
   @media (min-width: 960px) {
-    width: auto;
+    width: 867px;
   }
 }
 
@@ -1179,6 +1198,10 @@ address {
   @media (min-width: 960px) {
     width: 720px;
     padding: 68px 50px 76px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
   }
 }
 

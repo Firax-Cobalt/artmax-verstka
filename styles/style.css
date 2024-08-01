@@ -108,7 +108,7 @@ address {
   line-height: 1;
 }
 
-.page::after {
+.page_index::after {
   content: "";
   position: absolute;
   display: block;
@@ -1522,4 +1522,21 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   @media (min-width: 640px) {
     margin: 0;
   }
+}
+
+/* privacy.html */
+
+.page_privacy {
+  background-color: var(--background-color-9);
+}
+
+.privacy {
+  padding: 80px 0 0;
+}
+
+.privacy__title {
+  font-size: 2.8rem;
+  line-height: 1.2;
+  width: 90%;
+  margin: 0 auto;
 }

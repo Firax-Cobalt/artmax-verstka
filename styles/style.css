@@ -1335,6 +1335,10 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   @media (min-width: 960px) {
     padding: 29px 39px 38px 20px;
   }
+
+  @media (min-width: 1200px) {
+    padding: 54px 97px 37px 20px;
+  }
 }
 
 .footer__wrapper {
@@ -1352,6 +1356,12 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
     grid-template-rows: repeat(3, auto);
     column-gap: 0;
     width: 901px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    width: auto;
+    grid-template-columns: 383px 700px;
   }
 }
 
@@ -1373,6 +1383,10 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   @media (min-width: 960px) {
     margin: 0;
     padding-top: 23px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 0;
   }
 }
 
@@ -1398,6 +1412,11 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   @media (min-width: 960px) {
     padding-top: 49px;
   }
+
+  @media (min-width: 1200px) {
+    width: 383px;
+    padding-top: 58px;
+  }
 }
 
 .footer__map {
@@ -1421,6 +1440,10 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   @media (min-width: 960px) {
     width: 500px;
     align-self: end;
+  }
+
+  @media (min-width: 1200px) {
+    width: 700px;
   }
 }
 

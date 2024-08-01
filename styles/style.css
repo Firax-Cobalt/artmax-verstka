@@ -1531,12 +1531,15 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 }
 
 .privacy {
-  padding: 80px 0 0;
+  padding: 80px 20px 0;
 }
 
-.privacy__title {
+.privacy-title {
   font-size: 2.8rem;
   line-height: 1.2;
   width: 90%;
-  margin: 0 auto;
+}
+
+.privacy-list__title {
+  font-size: 1.6rem;
 }

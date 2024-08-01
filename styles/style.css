@@ -312,20 +312,20 @@ address {
     padding-top: 75px;
     padding-bottom: 117px;
 
-    background: url("../images/background-dotes.svg") no-repeat top 130px
-      right -130px / 200px 201px;
+    background: url("../images/background-dotes.svg") no-repeat top 130px right -130px /
+      200px 201px;
   }
 
   @media (min-width: 960px) {
     padding-top: 113px;
-    background: url("../images/background-dotes.svg") no-repeat top 227px
-      right -78px / 200px 201px;
+    background: url("../images/background-dotes.svg") no-repeat top 227px right -78px /
+      200px 201px;
   }
 
   @media (min-width: 1200px) {
     padding-top: 113px;
-    background: url("../images/background-dotes.svg") no-repeat top 184px
-      right 20px / 200px 201px;
+    background: url("../images/background-dotes.svg") no-repeat top 184px right
+      20px / 200px 201px;
   }
 }
 
@@ -703,6 +703,7 @@ address {
 
   @media (min-width: 1200px) {
     width: 712px;
+    margin-bottom: 75px;
   }
 }
 
@@ -724,6 +725,10 @@ address {
     margin: 0;
     margin-bottom: 40px;
     transform: translateX(-300px);
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 64px;
   }
 }
 
@@ -798,7 +803,21 @@ address {
     padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
-   }
+    gap: 52px 37px;
+    width: 1169px;
+  }
+}
+
+.services__content-wrapper_protect_attack .services__text-wrapper {
+  @media (min-width: 1200px) {
+    width: 521px;
+  }
+}
+
+.services__content-wrapper_protect_attack .services__submit {
+  @media (min-width: 1200px) {
+    position: static;
+  }
 }
 
 .services__content-wrapper_protect_bot {
@@ -947,6 +966,13 @@ address {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
+
+  @media (min-width: 1200px) {
+    width: 611px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-self: flex-start;
+  }
 }
 
 .services__item {
@@ -967,8 +993,12 @@ address {
 
   @media (min-width: 960px) {
     width: 293px;
-    min-height: 126px;
+    min-height: 100px;
     padding: 23px 18px 28px 58px;
+  }
+
+  @media (min-width: 1200px) {
+    height: auto;
   }
 }
 
@@ -1069,7 +1099,8 @@ address {
 
   @media (min-width: 960px) {
     padding-bottom: 92px;
-    background: url("../images/form-circle-image-tablet.svg") no-repeat, url("../images/background-dotes.svg") no-repeat;
+    background: url("../images/form-circle-image-tablet.svg") no-repeat,
+      url("../images/background-dotes.svg") no-repeat;
     background-position: top -90px right -638px, top 30% left -8px;
     background-size: auto, 200px 201px;
   }

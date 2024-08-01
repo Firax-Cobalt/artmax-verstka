@@ -857,6 +857,10 @@ address {
   @media (min-width: 960px) {
     width: 758px;
   }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 52px;
+  }
 }
 
 .services__content-wrapper_protect_bot .services__submit {
@@ -901,6 +905,10 @@ address {
 
   @media (min-width: 960px) {
     width: 758px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 52px;
   }
 }
 

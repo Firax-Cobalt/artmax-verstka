@@ -1542,6 +1542,10 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
     left: 50%;
     transform: translateX(-56%);
   }
+
+  @media (min-width: 1201px) {
+    width: 860px;
+  }
 }
 
 .privacy-title {
@@ -1565,6 +1569,10 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   @media (min-width: 641px) {
     font-size: 1.8rem;
   }
+
+  @media (min-width: 1201px) {
+    font-size: 2rem;
+  }
 }
 
 .privacy-list__item_security {
@@ -1577,6 +1585,10 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 
   @media (min-width: 641px) {
     font-size: 1.8rem;
+  }
+
+  @media (min-width: 1201px) {
+    font-size: 2rem;
   }
 }
 

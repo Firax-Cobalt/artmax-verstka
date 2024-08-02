@@ -1532,17 +1532,30 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 
 .privacy {
   padding: 80px 20px 65px;
+
+  @media (min-width: 641px) {
+    width: 640px;
+    margin: 0 auto;
+  }
 }
 
 .privacy-title {
   font-size: 2.8rem;
   line-height: 1.2;
   margin-bottom: 38px;
+
+  @media (min-width: 641px) {
+    font-size: 3.2rem;
+  }
 }
 
 .privacy-list__item {
   font-size: 1.6rem;
   margin-bottom: 24px;
+
+  @media (min-width: 641px) {
+    font-size: 1.8rem;
+  }
 }
 
 .privacy-list__item_security {
@@ -1552,16 +1565,28 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 .privacy-list__title {
   font-size: 1.6rem;
   line-height: 1.4;
+
+  @media (min-width: 641px) {
+    font-size: 1.8rem;
+  }
 }
 
 .privacy-list__list-text {
   line-height: 1.45;
+
+  @media (min-width: 641px) {
+    line-height: 1.58;
+  }
 }
 
 .privacy-list__sublist-item {
   position: relative;
   padding-left: 20px;
   line-height: 1.4;
+
+  @media (min-width: 641px) {
+    line-height: 1.58;
+  }
 }
 
 .privacy-list__sublist-item_applicants {
@@ -1589,6 +1614,14 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   top: 9px;
   left: 3px;
 }
+
+@media (min-width: 641px) {
+  .privacy-list__sublist-item::before  {
+    width: 6px;
+  height: 6px;
+  } 
+}
+
 
 .privacy-button-close {
   width: 24px;

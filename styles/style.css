@@ -1537,7 +1537,6 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 .privacy-title {
   font-size: 2.8rem;
   line-height: 1.2;
-  width: 90%;
   margin-bottom: 38px;
 }
 

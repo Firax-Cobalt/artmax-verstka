@@ -1590,3 +1590,31 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   top: 9px;
   left: 3px;
 }
+
+.privacy-button-close {
+  width: 24px;
+  height: 24px;
+  background-color: transparent;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+.privacy-button-close::before,
+.privacy-button-close::after {
+  content: '';
+  width: 19px;
+  height: 2px;
+  background-color: var(--background-color-1);
+  position: absolute;
+  top: 45%;
+  left: 12%;
+}
+
+.privacy-button-close::before {
+  transform: rotate(45deg);
+}
+
+.privacy-button-close::after {
+  transform: rotate(-45deg);
+}

@@ -175,7 +175,7 @@ address {
 .header {
   display: flex;
   flex-direction: column;
-  padding: 65px 20px 36px 40px;
+  padding: 65px 20px 34px 33px;
   width: 100%;
   height: 100vh;
   background-color: var(--background-color-12);
@@ -196,12 +196,14 @@ address {
 
 .header__logo {
   margin-bottom: 101px;
+  padding-left: 7px;
 }
 
 .nav-list {
   display: flex;
   flex-direction: column;
   gap: 17px;
+  padding-left: 7px;
   margin-bottom: 30px;
 
   @media (min-width: 1200px) {
@@ -245,8 +247,6 @@ address {
   width: 257px;
   min-height: 58px;
   font-weight: 500;
-  position: relative;
-  left: -7px;
 
   @media (min-width: 1200px) {
     display: block;
@@ -256,6 +256,8 @@ address {
 
 .header__address {
   margin-top: auto;
+  padding-left: 7px;
+  width: 274px;
   color: rgb(255 255 255 / 0.5);
   font-size: 1.4rem;
   line-height: 1.85;

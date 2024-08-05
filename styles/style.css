@@ -170,7 +170,6 @@ address {
 }
 
 .header {
-  justify-content: center;
   background-color: var(--background-color-3);
   display: none;
 
@@ -1522,15 +1521,24 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 
 .header-button {
   width: 28px;
-  height: 20px;
+  height: 19px;
   padding: 0;
   background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
-  top: 20px;
+  top: 35px;
   right: 20px;
 }
 
-.header-button::before {
+.header-button__line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--background-color-6);
+}
+
+/* .header-button::before {
   content: '';
   width: 100%;
   height: 3px;
@@ -1540,7 +1548,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   top: -10px;
   left: 0;
   box-shadow: 0 8px 0 0 var(--background-color-6), 0 16px 0 0 var(--background-color-6);
-}
+} */
 
 /* privacy.html */
 

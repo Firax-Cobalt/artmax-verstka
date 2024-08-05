@@ -101,6 +101,7 @@ address {
 }
 
 .page {
+  min-width: 320px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -186,6 +187,10 @@ address {
     padding: 65px 20px 59px 46px;
   }
 
+  @media (min-width: 500px) {
+    width: 500px;
+  }
+
   @media (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
@@ -206,6 +211,10 @@ address {
     margin-bottom: 127px;
     padding-left: 4px;
   }
+
+  @media (min-width: 640px) {
+    margin-bottom: 123px;
+  }
 }
 
 .nav-list {
@@ -218,6 +227,11 @@ address {
   @media (min-width: 480px) {
     margin-bottom: 39px;
     padding-left: 4px;
+  }
+
+  @media (min-width: 640px) {
+    margin-bottom: 33px;
+    gap: 4px;
   }
 
   @media (min-width: 1200px) {
@@ -236,11 +250,14 @@ address {
   color: var(--background-color-2);
   transition: color 0.155s ease-in-out;
 
+  @media (min-width: 640px) {
+    font-size: 32px;
+  }
+
   @media (min-width: 1200px) {
     color: var(--color-2);
     font-weight: 500;
     font-size: inherit;
-    
   }
 }
 
@@ -263,7 +280,7 @@ address {
   font-weight: 500;
 
   @media (min-width: 480px) {
-   width: 275px;
+    width: 275px;
   }
 
   @media (min-width: 1200px) {
@@ -281,9 +298,9 @@ address {
   line-height: 1.85;
 
   @media (min-width: 480px) {
-   width: 401px;
-   padding-left: 4px;
-   }
+    width: 401px;
+    padding-left: 4px;
+  }
 }
 
 .header__address-link {
@@ -301,7 +318,7 @@ address {
 
 .header__button-close::before,
 .header__button-close::after {
-  content: '';
+  content: "";
   display: inline-block;
   width: 24px;
   height: 2px;
@@ -1333,6 +1350,10 @@ address {
   }
 
   @media (min-width: 620px) {
+    width: 100%;
+  }
+
+  @media (min-width: 637px) {
     width: 620px;
   }
 

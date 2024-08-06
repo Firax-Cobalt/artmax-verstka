@@ -150,12 +150,25 @@
           <h2 class="services__title title wrapper">
             Услуги комплексной безопасности
           </h2>
-          <div class="services__select-content">
-            <select class="services__select-list" name="Список услуг">
-              <option value="Защита от DDoS-атак">Защита от DDoS-атак</option>
-              <option value="Защита от ботов">Защита от ботов</option>
-              <option value="Защита от взломов">Защита от взлома</option>
-            </select>
+          <div class="services__select">
+            <div class="services__select-content">
+              <select class="services__select-content-list" name="Список услуг">
+                <option value="Защита от DDoS-атак">Защита от DDoS-атак</option>
+                <option value="Защита от ботов">Защита от ботов</option>
+                <option value="Защита от взломов">Защита от взлома</option>
+              </select>
+            </div>
+            <ul class="services__select-list">
+              <li class="services__select-list-item">
+                <button class="services__select-list-button services__select-list-button_active" type="button">Защита от DDoS-атак</button>
+              </li>
+              <li class="services__select-list-item">
+                <button class="services__select-list-button" type="button">Защита от ботов</button>
+              </li>
+              <li class="services__select-list-item">
+                <button class="services__select-list-button" type="button">Защита от взлома</button>
+              </li>
+            </ul>
           </div>
           <div
             class="services__content-wrapper services__content-wrapper_protect_attack"

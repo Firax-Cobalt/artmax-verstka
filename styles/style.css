@@ -1447,6 +1447,7 @@ address {
   padding: 26px 20px 10px;
   font-size: inherit;
   line-height: 1.3;
+  color: rgba(0, 0, 0, 0.4);
   position: relative;
 
   @media (min-width: 480px) {

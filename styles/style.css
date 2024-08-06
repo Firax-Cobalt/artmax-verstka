@@ -263,7 +263,7 @@ address {
   }
 }
 
-.header__wrapper_close {
+.header__wrapper_sidebar_close {
   display: none;
 }
 
@@ -1494,7 +1494,7 @@ address {
 }
 
 .main-form__field-label {
-  display: block;
+  display: inline-block;
   position: relative;
   top: -39px;
   left: 20px;

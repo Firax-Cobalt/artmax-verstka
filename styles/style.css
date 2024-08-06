@@ -852,8 +852,7 @@ address {
 
   @media (min-width: 1200px) {
     width: 712px;
-    margin-bottom: 70px;
-    /* padding-left: 2px; */
+    margin-bottom: 67px;
   }
 }
 
@@ -924,7 +923,7 @@ address {
     grid-template-columns: repeat(3, 1fr);
     margin-bottom: 40px;
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: 2.4rem;
     line-height: var(--color-13);
   }
 

@@ -32,7 +32,7 @@
           Оставить заявку
         </button>
       </div>
-      <div class="header__wrapper header__wrapper_sidebar">
+      <div class="header__wrapper header__wrapper_close header__wrapper_sidebar">
         <div class="header__logo">
           <img src="./images/artmax-logo.svg" alt="Артмакс" width="151" height="31" />
         </div>
@@ -255,24 +255,24 @@
           </h2>
           <form class="main-form" method="post" action="#">
             <p class="main-form__field wrapper">
-              <label class="main-form__field-label" for="name">Ваше имя</label>
+              
               <input
                 class="main-form__input main-form__input_name"
-                type="text"
-                placeholder="Ваше имя"
+                type="text"      
                 id="name"
                 required
               />
+              <label class="main-form__field-label" for="name">Ваше имя</label>
             </p>
             <p class="main-form__field wrapper">
-              <label class="main-form__field-label" for="e-mail">Ваш e-mail</label>
+           
               <input
                 class="main-form__input main-form__input_email"
                 type="email"
-                placeholder="Ваш e-mail"
                 id="e-mail"
                 required
               />
+              <label class="main-form__field-label" for="e-mail">Ваш e-mail</label>
             </p>
             <p class="main-form__field main-form__field_tel wrapper">
               <label class="visually-hidden" for="tel">Номер телефона</label>
@@ -338,10 +338,10 @@
         >
       </div>
     </footer>
-    <button class="header-button" type="button">
+    <!-- <button class="header-button" type="button">
       <div class="header-button__line"></div>
       <div class="header-button__line"></div>
       <div class="header-button__line"></div>
-    </button>
+    </button> -->
   </body>
 </html>

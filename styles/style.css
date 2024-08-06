@@ -1725,16 +1725,39 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   position: fixed;
   top: 35px;
   right: 20px;
+  /* position: relative; */
 }
 
 .header-button__line {
   width: 100%;
   height: 3px;
   background-color: var(--background-color-6);
+  transition: position 0.4s ease-in-out;
+}
+
+.header-button__line:nth-child(1),
+.header-button__line:nth-child(2),
+.header-button__line:nth-child(3) {
+  position: absolute;
+}
+
+.header-button__line:nth-child(2) {
+  top: 0;
+}
+
+.header-button__line:nth-child(2) {
+  top: 8px;
+}
+
+.header-button__line:nth-child(3) {
+  top: 16px;
+}
+
+.header-button__line:hover .header-button__line:nth-child(1) {
+  top: 2px;
 }
 
 /* privacy.html */

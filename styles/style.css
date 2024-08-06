@@ -213,7 +213,7 @@ address {
   top: 0;
   left: 0;
   z-index: 3;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 
   @media (min-width: 480px) {
     padding: 65px 20px 59px 46px;
@@ -1506,19 +1506,7 @@ address {
 }
 
 .main-form__input:focus-visible + .main-form__field-label {
-  transform: translate(-38px, -20px) scale(0.75);
-
-  @media (min-width: 480px) {
-    transform: translate(-58px, -20px) scale(0.75);
-  }
-
-  @media (min-width: 640px) {
-    transform: translate(-62px, -20px) scale(0.75);
-  }
-
-  @media (min-width: 960px) {
-    transform: translate(-77px, -20px) scale(0.75);
-  }
+  transform: translate(-12px, -20px) scale(0.75);
 }
 
 .main-form__input:focus {

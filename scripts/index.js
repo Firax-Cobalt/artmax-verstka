@@ -1,9 +1,15 @@
 function header__button_open() {
   document.getElementById("mySidebar").style.transform = "translateX(0)";
+  document.getElementById("header-button").style.display = "none";
+  document.getElementById("sidebar-background").style.opacity = "0.6";
+  document.body.style.overflow = "hidden"; // Запретить прокрутку
 }
 
 function header__button_close() {
   document.getElementById("mySidebar").style.transform = "translateX(-100%)";
+  document.getElementById("header-button").style.display = "block";
+  document.getElementById("sidebar-background").style.opacity = "0";
+  document.body.style.overflow = ""; // Разрешить прокрутку
 }
 
 function serviceServices(evt, serviceName) {

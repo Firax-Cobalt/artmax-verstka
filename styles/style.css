@@ -218,6 +218,7 @@ address {
   top: 0;
   left: 0;
   z-index: -1;
+  transform: translate(-100%);
   transition: transform 0.4s ease-in-out;
 
   @media (min-width: 480px) {
@@ -228,18 +229,6 @@ address {
     width: 500px;
   }
 }
-
-/* .header__wrapper_sidebar::before {
-  content: '';
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--background-color-1);
-  position: absolute;
-  inset: 0;
-  z-index: -2;
-  opacity: 0.6;
-} */
 
 .header__wrapper_sidebar .header__logo {
   margin-bottom: 101px;
@@ -951,8 +940,8 @@ address {
   }
 
   @media (min-width: 1200px) {
-   width: 1160px;
-  margin-bottom: 70px;
+    width: 1160px;
+    margin-bottom: 70px;
   }
 }
 
@@ -971,7 +960,7 @@ address {
 }
 
 .services__select-list .services__select-list-button::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 2px;
@@ -980,12 +969,12 @@ address {
   bottom: 0;
 }
 
-.services__select-list .services__select-list-button_active::after  {
+.services__select-list .services__select-list-button_active::after {
   background-color: currentColor;
 }
 
 .services__select-list .services__select-list-button:hover {
-    color: var(--color-6);
+  color: var(--color-6);
 }
 
 .services__select-list .services__select-list-button_active {
@@ -1777,7 +1766,8 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   position: fixed;
   top: 35px;
   right: 20px;
-  /* position: relative; */
+  /* z-index: -3; */
+  z-index: 1;
 }
 
 .header-button__line {
@@ -1959,3 +1949,16 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
 .privacy-button-close::after {
   transform: rotate(-45deg);
 }
+
+.sidebar-background {
+  content: "";
+  width: 100vw;
+  opacity: 0;
+  height: 100vh;
+  background-color: var(--background-color-1);
+  position: fixed;
+  z-index: -2;
+  transition: all 0.555s ease-in-out;
+}
+
+

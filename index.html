@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="styles/style.css" />
     <title>ArtMax.Pro | Услуги комплексной безопасности для вашего сайта</title>
   </head>
-  <body class="page page_index">
+  <body class="page page_index" id="body-sidebar">
     <header class="header">
       <div class="header__wrapper header__wrapper_header">
         <nav class="main-nav">
@@ -32,6 +32,7 @@
           Оставить заявку
         </button>
       </div>
+      <div class="sidebar-background" id="sidebar-background"></div>
       <div class="header__wrapper header__wrapper_sidebar" id="mySidebar">
         <button
           class="header__button-close"
@@ -76,6 +77,7 @@
             >manager@artmax.pro</a
           >
         </address>
+        <div class="header__wrappper_sidebar-background"></div>
       </div>
     </header>
     <main class="main-content">
@@ -377,11 +379,12 @@
         >
       </div>
     </footer>
-    <button class="header-button" onclick="header__button_open()" type="button">
+    <button class="header-button" id="header-button" onclick="header__button_open()" type="button">
       <div class="header-button__line"></div>
       <div class="header-button__line"></div>
       <div class="header-button__line"></div>
     </button>
+
     <script src="./scripts/index.js"></script>
   </body>
 </html>

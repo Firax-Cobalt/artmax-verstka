@@ -32,7 +32,7 @@
           Оставить заявку
         </button>
       </div>
-      <div class="header__wrapper header__wrapper_sidebar" id="mySidebar">
+      <!-- <div class="header__wrapper header__wrapper_sidebar" id="mySidebar">
         <button
           class="header__button-close"
           onclick="header__button_close()"
@@ -76,7 +76,7 @@
             >manager@artmax.pro</a
           >
         </address>
-      </div>
+      </div> -->
     </header>
     <main class="main-content">
       <section class="introduce">
@@ -168,36 +168,40 @@
             Услуги комплексной безопасности
           </h2>
           <div class="services__select">
-            <div class="services__select-content">
+            <!-- <div class="services__select-content">
               <select class="services__select-content-list" name="Список услуг">
                 <option value="Защита от DDoS-атак">Защита от DDoS-атак</option>
                 <option value="Защита от ботов">Защита от ботов</option>
                 <option value="Защита от взломов">Защита от взлома</option>
               </select>
-            </div>
-            <ul class="services__select-list">
+            </div> -->
+            <ul class="tab services__select-list">
               <li class="services__select-list-item">
                 <button
-                  class="services__select-list-button services__select-list-button_active"
+                  class="tablinks services__select-list-button services__select-list-button_active"
                   type="button"
+                  onclick="serviceServices(event, 'content-attack')"
                 >
                   Защита от DDoS-атак
                 </button>
               </li>
               <li class="services__select-list-item">
-                <button class="services__select-list-button" type="button">
+                <button class="tablinks services__select-list-button" type="button"
+                onclick="serviceServices(event, 'content-bot')"
+                >
                   Защита от ботов
                 </button>
               </li>
               <li class="services__select-list-item">
-                <button class="services__select-list-button" type="button">
+                <button class="tablinks services__select-list-button" type="button"  onclick="serviceServices(event, 'content-hacking')"
+                >
                   Защита от взлома
                 </button>
               </li>
             </ul>
           </div>
           <div
-            class="services__content-wrapper services__content-wrapper_protect_attack"
+            id="content-attack"  class="tabcontent services__content-wrapper services__content-wrapper_protect_attack "
           >
             <div class="services__text-wrapper wrapper">
               <p class="services__text">
@@ -241,9 +245,9 @@
               Защитить сайт
             </button>
           </div>
-          <!-- <div
-            class="services__content-wrapper services__content-wrapper_protect_bot"
-          >
+          <div
+          id="content-bot" class="tabcontent services__content-wrapper services__content-wrapper_protect_bot "
+          > 
             <div class="services__text-wrapper wrapper">
               <p class="services__text">
                 Боты могут использоваться злоумышленниками для парсинга, кражи
@@ -261,9 +265,9 @@
             <button class="button services__submit" type="button">
               Защититься от ботов
             </button>
-          </div> -->
-          <!-- <div
-            class="services__content-wrapper services__content-wrapper_protect_hacking"
+          </div>
+          <div
+            id="content-hacking" class="tabcontent services__content-wrapper services__content-wrapper_protect_hacking"
           >
             <div class="services__text-wrapper wrapper">
               <p class="services__text">
@@ -282,7 +286,7 @@
             <button class="button services__submit" type="button">
               Подключить защиту
             </button>
-          </div> -->
+          </div>
         </div>
       </section>
       <section class="form">

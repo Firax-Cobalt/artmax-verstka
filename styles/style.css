@@ -1341,6 +1341,12 @@ address {
   }
 }
 
+.tabcontent {
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
 .form {
   padding-top: 60px;
   background: url("../images/form-circle-image-mobile.png") no-repeat;

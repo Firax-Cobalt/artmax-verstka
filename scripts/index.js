@@ -1,10 +1,10 @@
-// function header__button_open() {
-//   document.getElementById("mySidebar").style.transform = "translateX(0)";
-// }
+function header__button_open() {
+  document.getElementById("mySidebar").style.transform = "translateX(0)";
+}
 
-// function header__button_close() {
-//   document.getElementById("mySidebar").style.transform = "translateX(-100%)";
-// }
+function header__button_close() {
+  document.getElementById("mySidebar").style.transform = "translateX(-100%)";
+}
 
 function serviceServices(evt, serviceName) {
   // Declare all variables
@@ -23,6 +23,6 @@ function serviceServices(evt, serviceName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(serviceName).style.display = "block";
+  document.getElementById(serviceName).style.display = "flex";
   evt.currentTarget.className += " active";
 }

@@ -937,13 +937,33 @@ address {
 .services__select-list .services__select-list-button {
   @media (min-width: 960px) {
     padding: 14px 0 16px;
-    border-bottom: 2px solid currentColor;
+    /* border-bottom: 2px solid currentColor; */
+    position: relative;
     width: 100%;
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
     text-align: left;
+    transition: color 0.3s ease-in-out;
   }
+}
+
+.services__select-list .services__select-list-button::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--background-color-1);
+  position: absolute;
+  bottom: 0;
+}
+
+.services__select-list .services__select-list-button_active::after  {
+  background-color: currentColor;
+}
+
+.services__select-list .services__select-list-button:hover {
+    color: var(--color-6);
 }
 
 .services__select-list .services__select-list-button_active {

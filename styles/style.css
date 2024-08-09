@@ -105,7 +105,7 @@ address {
 .page {
   min-width: 320px;
   position: relative;
-  z-index: -5;
+  z-index: -10;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -125,7 +125,7 @@ address {
   transform: translateX(-50%);
   inset-inline-start: 50%;
   inset-block-start: 35px;
-  z-index: -4;
+  z-index: -10;
 }
 
 @media (min-width: 480px) {
@@ -186,7 +186,7 @@ address {
     min-height: 58px;
     padding: 26px 43px 0 44px;
     position: absolute;
-    z-index: -3;
+    z-index: -9;
     width: 100%;
     background-color: transparent;
   }
@@ -217,7 +217,7 @@ address {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: -6;
   transform: translate(-100%);
   transition: transform 0.4s ease-in-out;
 
@@ -297,7 +297,7 @@ address {
 
 .artmax-logo {
   position: relative;
-  z-index: 2;
+  z-index: -10;
 }
 
 .artmax-logo__image {
@@ -368,12 +368,19 @@ address {
 
 .main-content {
   position: relative;
-  z-index: -5;
+  z-index: -10;
+}
+
+.introduce,
+.about,
+.services,
+.form {
+  z-index: -10;
 }
 
 .introduce {
   position: relative;
-  z-index: -5;
+  z-index: -10;
   min-height: 100vh;
   padding-top: 385px;
   padding-bottom: 39px;
@@ -405,7 +412,7 @@ address {
 
 .introduce__logo {
   position: relative;
-  z-index: 1;
+  z-index: -10;
   display: block;
   width: 95%;
   margin: 0 auto 225px;
@@ -433,7 +440,7 @@ address {
 
 .introduce__text {
   position: relative;
-  z-index: 1;
+  z-index: -10;
   color: var(--color-2);
   line-height: 1.5;
   text-align: center;
@@ -900,7 +907,7 @@ address {
 .services__select-content::before {
   content: "";
   position: absolute;
-  z-index: 2;
+  z-index: -10;
   display: block;
   width: 8px;
   height: 8px;
@@ -948,7 +955,6 @@ address {
 .services__select-list .services__select-list-button {
   @media (min-width: 960px) {
     padding: 14px 0 16px;
-    /* border-bottom: 2px solid currentColor; */
     position: relative;
     width: 100%;
     font-weight: inherit;
@@ -1537,7 +1543,7 @@ address {
   position: relative;
   top: -39px;
   left: 20px;
-  z-index: 2;
+  z-index: -10;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   transition: transform 0.255s ease-in-out;
@@ -1620,6 +1626,8 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   padding: 45px 0 32px;
   background: var(--background-color-3)
     url("../images/introduce-background.jpg") center / cover;
+    position: relative;
+    z-index: -10;
 
   @media (min-width: 480px) {
     padding: 51px 21px 43px 20px;
@@ -1766,8 +1774,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   position: fixed;
   top: 35px;
   right: 20px;
-  /* z-index: -3; */
-  z-index: 1;
+  z-index: -8;
 }
 
 .header-button__line {
@@ -1957,7 +1964,7 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   height: 100vh;
   background-color: var(--background-color-1);
   position: fixed;
-  z-index: -2;
+  z-index: -9;
   transition: all 0.555s ease-in-out;
 }
 

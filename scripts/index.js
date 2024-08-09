@@ -2,6 +2,7 @@ function header__button_open() {
   document.getElementById("mySidebar").style.transform = "translateX(0)";
   document.getElementById("header-button").style.display = "none";
   document.getElementById("sidebar-background").style.opacity = "0.6";
+  document.getElementById("sidebar-background").style.display = "block";
   document.body.style.overflow = "hidden"; // Запретить прокрутку
 }
 
@@ -9,6 +10,7 @@ function header__button_close() {
   document.getElementById("mySidebar").style.transform = "translateX(-100%)";
   document.getElementById("header-button").style.display = "flex";
   document.getElementById("sidebar-background").style.opacity = "0";
+  document.getElementById("sidebar-background").style.display = "none";
   document.body.style.overflow = ""; // Разрешить прокрутку
 }
 

@@ -1769,12 +1769,19 @@ input[type="checkbox"]:checked ~ .main-form__input-tick::before {
   height: 19px;
   padding: 0;
   background-color: transparent;
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   top: 35px;
   right: 20px;
   z-index: -8;
+  transition: transform 0.255s ease-in-out;
+
+
+  @media (min-width: 981px) {
+    right: auto;
+    left: 20px;
+  }
 }
 
 .header-button__line {
